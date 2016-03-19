@@ -1,0 +1,329 @@
+
+div,body,h1,h2,h3,ul,li{
+	margin: 0px;
+	padding: 0px;
+}
+li{
+	list-style-type: none;
+}
+h1,h2,h3{
+	font-weight: normal;
+}
+h2,h3{
+	font-size: 14px;
+}
+body,button,input,textarea{
+	font-family: 'Microsoft YaHei','simHei','STHeiti',sans-serif;
+}
+body{
+	min-width: 700px;
+	min-height: 400px;
+}
+select,button,input,textarea{
+	border: none;
+	outline: none;
+}
+
+.header{
+	width: auto; 
+	height: 60px; 
+	line-height: 60px; 
+	background-color: #333;
+}
+
+.header h1{
+	font-size: 20px;
+	color: #fff;
+	margin-left: 30px;
+}
+.left{
+	top: 60px;
+	bottom: 0px;
+	width: 250px;
+	
+	position: absolute;
+	background-color: #eee;
+	border: 1px solid #ddd;
+	z-index: 2;
+	line-height: 2;
+}
+
+}
+/*任何版本的 Internet Explorer （包括 IE8）都不支持属性值 "inherit"。*/
+
+
+.left .active{
+	background-color: #fff;
+}
+
+.all-tasks{
+	cursor: pointer;
+	padding-top: 5px;
+	border-bottom: 1px solid #ddd;
+}
+.list-title{
+	padding-left: 15px;
+	border-bottom: 1px solid #ddd;
+}
+
+.list li {
+    cursor: pointer;
+}
+.list h2 {
+    position: relative;
+    padding-left: 15px;
+    font-size: 16px;
+}
+.list h3 {
+    position: relative;
+    padding-left: 25px;
+}
+.list h2:hover, .list h3:hover {
+    background-color: #f8f8f8;
+}
+.list h2:hover .fa-trash-o, .list h3:hover .fa-trash-o {
+    display: inline-block;
+}
+i{
+	margin-right: 5px;
+}
+.fa-trash-o {
+    display: none;
+    font-size: 16px;
+    position: absolute;
+    right: 5px;
+    top: 8px;
+}
+
+.add{
+	height: 50px;
+	padding: 10px 20px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	
+	width: 250px;
+	border-top: 1px solid #ddd;
+	cursor: pointer;
+}
+.add:hover{
+	background-color: #d3d3d3;
+}
+.mid{
+	position: absolute;
+	width: 250px;
+	left: 250px;
+	bottom: 0px;
+	top: 60px;
+	border-right: 1px solid #ddd;
+}
+.status{
+	height: 40px;
+	border-bottom: 1px solid #ddd;
+	background-color: #eee;
+	margin-left: 0px;
+}
+
+#all-task,#unfinished-task,#finished-task{
+	float: left;
+	padding-left: 13px;
+	padding-right: 13px;
+	line-height: 40px;
+	
+}
+#all-task:hover,#unfinished-task:hover,#finished-task:hover{
+	background-color: #fff;
+	cursor: pointer;
+}
+#all-task.active{
+	background-color: #fff;
+	margin-bottom: -1px;
+	border-bottom: 2px solid #fff;
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	cursor: default;
+}
+
+.task-list{
+	line-height: 2;
+	font-size: 14px;
+}
+.task-list div{
+	line-height: 2.3;
+	background-color: #f1f9f9;
+	padding-left: 10px;
+}
+.task-list li{
+	padding-left: 20px;
+	cursor: pointer;
+	transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+}
+.task-list li:hover{
+	background-color: #f1f1f1;
+}
+.task-list .active{
+	background-color: #eee;
+}
+.task-done{
+	color: #e3e3e3;
+}
+
+.right{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 500px;
+	top: 60px;
+
+}
+.title{
+	height: 40px;
+	line-height: 40px;
+	background-color: #eee;
+	overflow: hidden;
+	position: relative;
+}
+.todo-name{
+	padding-left: 20px;
+	float: left;
+}
+.manipulate{
+	padding-right: 20px;
+	float: right;
+}
+.manipulate a{
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.task-date{
+	height: 40px;
+	line-height: 40px;
+	background-color: #eee;
+	padding-left: 20px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.content{
+	position: absolute;
+	top: 100px;
+	bottom: 60px;
+	right: 15px;
+	left: 15px;
+}
+.right input{
+	font-size: 14px;
+	border: 1px solid #aeaeae;
+}
+.right input:focus{
+	border: 1px solid #404040;
+}
+.input-title{
+	padding: 7px 10px;
+	margin-top: 10px;
+	width: 244px;
+}
+.input-date{
+	padding: 5px 10px;
+}
+.textarea-content{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	font-size: 14px;
+	resize: none;
+	line-height: 1.6;
+}
+.button-area{
+	display: none;
+	position: absolute;
+	bottom: 15px;
+	right: 20px;
+}
+.button-area button{
+	cursor: pointer;
+	outline: none;
+	padding: 8px 20px;
+	margin-left: 15px;
+}
+.info{
+	color: #b35690;
+}
+.save{
+	background-color: #95a0d8;
+	color: #fff;
+}
+.cover{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.2);
+	z-index: 10;
+}
+.modal{
+	width: 320px;
+	height: 180px;
+	padding: 15px;
+	margin-top: -90px;
+	margin-left: -160px;
+	background-color: #eee;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 15;
+	-webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    -o-box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+
+}
+.modal-head{
+	font-size: 20px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+.modal-body{
+	margin-top: 6px;
+	padding-top: 10px;
+	padding-left: 30px;
+	line-height: 2.2;
+	border-top: 1px dashed #c6cae0;
+}
+.modal-body select, .modal-body input{
+	width: 160px;
+	height: 26px;
+	margin-left: 10px;
+	padding-left: 5px;
+	border:1px solid #c6cae0;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.modal-foot{
+	text-align: right;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+.modal-foot button{
+	background-color: #d8d8d8;
+	border: none;
+	cursor: pointer;
+	margin-right: 8px;
+	padding: 5px 23px;
+	transition: 0.2s ease;
+	-webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+}
+.modal-foot button:hover {
+    background-color: #999;
+    color: #fff;
+}
